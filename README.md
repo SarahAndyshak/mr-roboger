@@ -52,36 +52,17 @@ Describe: beepBoop()
 
 Test: "It should return 1 if something is inputted.
 Code: 
-const number = 1;
-beepBoop(number);
+const n = 1;
+beepBoop(n);
 Expected Output: 1
-function beepBoop(number) {
+function beepBoop(n) {
   return 1;
 }
 
-
-Test: "It should return "Beep!" if 1 is inputted.
-Code: 
-const number = 1;
-beepBoop(1);
-Expected Output: "Beep!"
-function beepBoop(1)
-
-Test: "It should return "Boop!" if 2 is inputted.
-Code: beepBoop(2)
-Expected Output: "Boop!"
-function beepBoop() {
-  let n = 1;
-  return "Beep!";
-  let n = 2;
-  return "Boop!";
+Test: "It should create a blank array."
+Code:
+const outputArray = []
+Expected Output: nothing, received output "undefined"
+function beepBoop(n) {
+  const outputArray = []
 }
-
-
-Test: "It should return an array of number from 0 to the user's inputted number"
-Code:
-Expected Output:
-
-Test:
-Code:
-Expected Output:

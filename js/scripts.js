@@ -1,5 +1,5 @@
 // Business Logic
 
-function beepBoop(number) {
-  return 1;
+function beepBoop(n) {
+  const outputArray = []
 }

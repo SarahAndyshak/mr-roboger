@@ -18,3 +18,7 @@ if 1 is inputted return "Beep!
 if 2 is inputted return "Boop!"
 
 if 3 is inputted return "Won't you be my neighbor?"
+
+function beepBoop(n) {
+  const outputArray = []
+}
