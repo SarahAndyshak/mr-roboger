@@ -118,3 +118,19 @@ function beepBoop(n) {
     return "Boop!"
   }
 }
+
+Test: "It should return "Won't you be my neighbor?" if n = 3
+Code:
+const n = 1, n = 2, n = 3, n = 4 in sequence
+beepBoop(1); then beepBoop(2); then beepBoop(3), then beepBoop(4)
+function beepBoop(n) {
+  if (n !== 1 && n !== 2 && n !== 3) {
+    return n;
+  } else if (n === 1) {
+    return "Beep!";
+  } else if (n === 2) {
+    return "Boop!"
+  } else if (n === 3) {
+    return "Won't you be my neighbor?";
+  }
+}

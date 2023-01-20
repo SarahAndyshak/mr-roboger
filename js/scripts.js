@@ -34,9 +34,33 @@ function beepBoop(n) {
 function beepBoop(n) {
   if (n !== 1 && n !== 2) {
     return n;
-  } else if (n = 1 && n !== 2) {
+  } else if (n === 1) {
     return "Beep!";
-  } else if (n = 2) {
+  } else if (n === 2) {
+    return "Boop!"
+  }
+}
+
+// returns "Won't you be my neighbor?" for n = 3 etc.
+function beepBoop(n) {
+  if (n !== 1 && n !== 2 && n !== 3) {
+    return n;
+  } else if (n === 1) {
+    return "Beep!";
+  } else if (n === 2) {
+    return "Boop!"
+  } else if (n === 3) {
+    return "Won't you be my neighbor?";
+  }
+}
+
+// needed to use === instead
+function beepBoop(n) {
+  if (n !== 1 && n !== 2) {
+    return n;
+  } else if (n === 1) {
+    return "Beep!";
+  } else if (n === 2) {
     return "Boop!"
   }
 }
