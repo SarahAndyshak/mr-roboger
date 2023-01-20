@@ -54,7 +54,37 @@
 //   }
 // }
 
+// update to remove unnessary statements in final else if based on yesterday's notes.
+function beepBoop(n) {
+  if (n === 3) {
+    return "Won't you be my neighbor";
+  } else if (n === 2) {
+    return "Boop!";
+  } else if (n === 1) {
+    return "Beep!";
+  } else {
+    return n;
+  }
+}
+
 // create an array and populate it
+function beepBoop(n) {
+  const outputArray = [];
+  for (let i = 0; i <= n; i++) {
+    if ([i] === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if ([i] === 2) {
+      outputArray.push("Boop!");
+    } else if ([i] === 1) {
+      outputArray.push("Beep!");
+    } else {
+      return outputArray;
+    }
+  }
+  return outputArray;
+};
+
+// try adding continue from yesterday
 function beepBoop(n) {
   const outputArray = [];
   for (let i = 0; i <= n; i++) {
@@ -70,4 +100,3 @@ function beepBoop(n) {
   }
   return outputArray;
 };
-
