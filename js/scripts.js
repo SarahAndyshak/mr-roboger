@@ -156,3 +156,19 @@ function transform() {
   })
   return newArray;
 }
+
+
+
+
+// User Logic
+function handleFormSubmission(event) {
+  event.preventDefault();
+  const passage = document.getElementById("text-passage").value; // this part may need to change to grab results of beepBoop()
+  const beepBoop = beepBoop(n);
+  
+  document.querySelector("div#add-array").append(beepBoop); // I think this needs to be the array returned by beepBoop()
+}
+
+window.addEventListener("load", function() {
+  document.querySelector("form#number-change").addEventListener("submit", handleFormSubmission);
+});
