@@ -50,7 +50,7 @@ SOFTWARE.
 ## Test-Driven Development
 Describe: beepBoop()
 
-Test: "It should return 1 if something is inputted.
+Test: "It should return 1 if something is inputted."
 Code: 
 const n = 1;
 beepBoop(n);
@@ -59,10 +59,18 @@ function beepBoop(n) {
   return 1;
 }
 
-Test: "It should create a blank array."
+Test: "It should return "Beep!" if n = 1."
 Code:
-const outputArray = []
-Expected Output: nothing, received output "undefined"
+const n = 1;
+beepBoop(n);
 function beepBoop(n) {
-  const outputArray = []
+  if(n = 1) {
+    return "Beep!";
+  };
 }
+
+Test: "It should not return "Beep!" if n !== 1."
+Code:
+const n = 2;
+beepBoop(n);
+Fails -- returns "Beep!" for beepBoop(n), beepBoop(1), and beepBoop(2)

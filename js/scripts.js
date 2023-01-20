@@ -1,5 +1,7 @@
 // Business Logic
 
 function beepBoop(n) {
-  const outputArray = []
+  if(n = 1) {
+    return "Beep!";
+  };
 }

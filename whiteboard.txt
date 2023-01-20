@@ -20,5 +20,13 @@ if 2 is inputted return "Boop!"
 if 3 is inputted return "Won't you be my neighbor?"
 
 function beepBoop(n) {
-  const outputArray = []
+  const outputArray = [];
+  for (let i = 0; i <= n; i++) {
+    outputArray.push(n);
+  }
+}
+
+function beepBoop(n){}
+if (n = 1) {
+return "Beep!"
 }
