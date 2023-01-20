@@ -1,0 +1,11 @@
+if number includes 3, return "Won't you be my neighbor?" overrides below
+if number includes 2, return "Boop!" overrides below
+if number includes 1, return "Beep!"
+if none of the above, return number
+
+project needs to clear each time
+push to an array -- create final output array
+
+must recognize numbers
+must return strings for variables above
+given number, must return array answer
