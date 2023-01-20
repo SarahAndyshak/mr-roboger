@@ -102,8 +102,28 @@ function beepBoop(n) {
   }
 };
 
-// create an array from version of function beepBoop() without the push methods; doesn't work
-function newArray() {
-  const newArray = [];
-  newArray.push(beepBoop(n));
+// // create an array from version of function beepBoop() without the push methods; doesn't work
+// function newArray() {
+//   const newArray = [];
+//   newArray.push(beepBoop(n));
+// }
+
+// Try to figure out how to change 10, 12, 13 etc into correct strings
+function beepBoop(n) {
+  if (n === 3) {
+    return "Won't you be my neighbor";
+  } else if (n === 2) {
+    return "Boop!";
+  } else if (n === 1) {
+    return "Beep!";
+  } else {
+    return n;
+  }
 }
+
+//sample loop from lesson
+const array = [1, 2, 3, 4];
+let doubledArray = [];
+for (let i = 0; i < array.length; i++) {
+    doubledArray.push(array[i] * 2);
+  }

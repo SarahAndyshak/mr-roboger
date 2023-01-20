@@ -11,22 +11,5 @@ must return strings for variables above
 given number, must return array answer
 
 print array to html page
-will need to use .includes to find numbers to replace
+will need to use .includes to find numbers to replace; includes only works on strings and arrays
 
-if 1 is inputted return "Beep!
-
-if 2 is inputted return "Boop!"
-
-if 3 is inputted return "Won't you be my neighbor?"
-
-function beepBoop(n) {
-  const outputArray = [];
-  for (let i = 0; i <= n; i++) {
-    outputArray.push(n);
-  }
-}
-
-function beepBoop(n){}
-if (n = 1) {
-return "Beep!"
-}
