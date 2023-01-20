@@ -42,33 +42,32 @@
 // }
 
 // returns "Won't you be my neighbor?" for n = 3 etc. Rearranged for descending order for later function
-function beepBoop(n) {
-  if (n === 3) {
-    return "Won't you be my neighbor";
-  } else if (n === 2) {
-    return "Boop!"
-  } else if (n === 1) {
-    return "Beep!";
-  } else if (n !== 1 && n !== 2 && n !== 3) {
-    return n;
-  }
-}
+// function beepBoop(n) {
+//   if (n === 3) {
+//     return "Won't you be my neighbor";
+//   } else if (n === 2) {
+//     return "Boop!";
+//   } else if (n === 1) {
+//     return "Beep!";
+//   } else if (n !== 1 && n !== 2 && n !== 3) {
+//     return n;
+//   }
+// }
 
-// create an array
+// create an array and populate it
 function beepBoop(n) {
-  
   const outputArray = [];
-  for (let i = 0; i <= n; i++)
-  
-  if (n !== 1 && n !== 2 && n !== 3) {
-    return n;
-  } else if (n === 1) {
-    return "Beep!";
-  } else if (n === 2) {
-    return "Boop!"
-  } else if (n === 3) {
-    return "Won't you be my neighbor?";
+  for (let i = 0; i <= n; i++) {
+    if ([i] === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if ([i] === 2) {
+      outputArray.push("Boop!");
+    } else if ([i] === 1) {
+      outputArray.push("Beep!");
+    } else if ([i] !== 1 && [i] !== 2 && [i] !== 3) { // try changing this line
+      return outputArray;
+    }
   }
+  return outputArray;
+};
 
-  
-}

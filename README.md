@@ -138,3 +138,22 @@ function beepBoop(n) {
 }
 
 Test: "It should create an array and push values into the array.
+Code:
+const n = 1
+beepBoop(1)
+Expected Outcome: [0, "Beep!"] 
+Actual result: returned an empty array.
+function beepBoop(n) {
+  const outputArray = [];
+  for (let i = 0; i <= n; i++) {
+    if ([i] === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if ([i] === 2) {
+      outputArray.push("Boop!");
+    } else if ([i] === 1) {
+      outputArray.push("Beep!");
+    } else if ([i] !== 1 && [i] !== 2 && [i] !== 3) {
+      return outputArray;
+    }
+  }
+}
