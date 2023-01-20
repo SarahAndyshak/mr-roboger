@@ -109,6 +109,7 @@ Test: "It should return "Beep!" if n = 1, "Boop!" for n = 2, and n for all other
 Code:
 const n = 1, n = 2, n = 3, in sequence
 beepBoop(1); then beepBoop(2); then beepBoop(3)
+Expected outcome for beepBoop(2): "Boop!"
 function beepBoop(n) {
   if (n !== 1 && n !== 2) {
     return n;
@@ -123,14 +124,17 @@ Test: "It should return "Won't you be my neighbor?" if n = 3
 Code:
 const n = 1, n = 2, n = 3, n = 4 in sequence
 beepBoop(1); then beepBoop(2); then beepBoop(3), then beepBoop(4)
+Expected Outcome for beepBoop(3): "Won't you be my neighbor?"
 function beepBoop(n) {
-  if (n !== 1 && n !== 2 && n !== 3) {
-    return n;
-  } else if (n === 1) {
-    return "Beep!";
+  if (n === 3) {
+    return "Won't you be my neighbor";
   } else if (n === 2) {
     return "Boop!"
-  } else if (n === 3) {
-    return "Won't you be my neighbor?";
+  } else if (n === 1) {
+    return "Beep!";
+  } else if (n !== 1 && n !== 2 && n !== 3) {
+    return n;
   }
 }
+
+Test: "It should create an array and push values into the array.
