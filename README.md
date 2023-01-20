@@ -72,5 +72,49 @@ function beepBoop(n) {
 Test: "It should not return "Beep!" if n !== 1."
 Code:
 const n = 2;
-beepBoop(n);
+beepBoop(2);
 Fails -- returns "Beep!" for beepBoop(n), beepBoop(1), and beepBoop(2)
+
+Test: "It should not return "Beep!" if n !== 1."
+Code: 
+const n = 2;
+beepBoop(2);
+function beepBoop(n) {
+  if(n = 1) {
+    return "Beep!";
+  } else if (n !== 1) {
+    return n;
+  }
+}
+Fails -- still returns "Beep!" for const n = 2.
+
+Test: "It should return 2 if const n = 2."
+Code: 
+const n = 2;
+beepBoop(2);
+
+Test: "It should return "Beep!" if n = 1.
+Code: 
+const n = 1; 
+beepBoop(1);
+function beepBoop(n) {
+  if (n !== 1) {
+    return n;
+  } else if (n = 1) {
+    return "Beep!";
+  }
+}
+
+Test: "It should return "Beep!" if n = 1, "Boop!" for n = 2, and n for all other values of n.
+Code:
+const n = 1, n = 2, n = 3, in sequence
+beepBoop(1); then beepBoop(2); then beepBoop(3)
+function beepBoop(n) {
+  if (n !== 1 && n !== 2) {
+    return n;
+  } else if (n = 1 && n !== 2) {
+    return "Beep!";
+  } else if (n = 2) {
+    return "Boop!"
+  }
+}
