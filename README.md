@@ -51,19 +51,21 @@ SOFTWARE.
 Describe: beepBoop()
 
 Test: "It should return 1 if something is inputted.
-Code: beepBoop(n)
+Code: 
+const number = 1;
+beepBoop(number);
 Expected Output: 1
-function beepBoop(n) {
+function beepBoop(number) {
   return 1;
 }
 
+
 Test: "It should return "Beep!" if 1 is inputted.
-Code: beepBoop(1)
+Code: 
+const number = 1;
+beepBoop(1);
 Expected Output: "Beep!"
-function beepBoop() {
-  let n = 1;
-  return "Beep!";
-}
+function beepBoop(1)
 
 Test: "It should return "Boop!" if 2 is inputted.
 Code: beepBoop(2)
