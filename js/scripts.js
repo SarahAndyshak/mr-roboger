@@ -84,19 +84,26 @@ function beepBoop(n) {
   return outputArray;
 };
 
-// try adding continue from yesterday
+// try adding continue from yesterday -- doesn't help, still returns empty array
 function beepBoop(n) {
   const outputArray = [];
   for (let i = 0; i <= n; i++) {
     if ([i] === 3) {
       outputArray.push("Won't you be my neighbor");
+      continue;
     } else if ([i] === 2) {
       outputArray.push("Boop!");
+      continue;
     } else if ([i] === 1) {
       outputArray.push("Beep!");
-    } else if ([i] !== 1 && [i] !== 2 && [i] !== 3) { // try changing this line
+    } else {
       return outputArray;
     }
   }
-  return outputArray;
 };
+
+// create an array from version of function beepBoop() without the push methods; doesn't work
+function newArray() {
+  const newArray = [];
+  newArray.push(beepBoop(n));
+}
