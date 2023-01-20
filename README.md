@@ -50,9 +50,13 @@ SOFTWARE.
 ## Test-Driven Development
 Describe: beepBoop()
 
-Test: "It should return 0 for no entry."
-Code:
-Expected Output:
+Test: "It should return 1 if something is inputted.
+Code: beepBoop(n)
+Expected Output: 1
+
+Test: "It should return an array if a number is inputted.
+Code: beepBoop(1)
+Expected Output: 0
 
 Test: "It should return an array of number from 0 to the user's inputted number"
 Code:
@@ -60,4 +64,4 @@ Expected Output:
 
 Test:
 Code:
-Output:
+Expected Output:
