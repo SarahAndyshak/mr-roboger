@@ -121,9 +121,21 @@ function beepBoop(n) {
   }
 }
 
-//sample loop from lesson
+//sample loop from lesson; trying to figure out how to combine this with above function
+// const array = [1, 2, 3, 4];
+// let doubledArray = [];
+// for (let i = 0; i < array.length; i++) {
+//     doubledArray.push(array[i] * 2);
+//   }
+
+// still returns empty ; seems like includes only works on strings and arrays, can't figure it out.
 const array = [1, 2, 3, 4];
-let doubledArray = [];
-for (let i = 0; i < array.length; i++) {
-    doubledArray.push(array[i] * 2);
-  }
+let newArray = [];
+function transform() {
+  newArray.forEach(function(element) {
+    if (element.toString().includes("1")) {
+      outputArray.push("Beep!");
+    }
+  })
+  return newArray;
+}
