@@ -54,7 +54,7 @@
 //   }
 // }
 
-// update to remove unnessary statements in final else if based on yesterday's notes.
+// update to remove unnessary statements in final else if based on yesterday's notes. This function does work.
 function beepBoop(n) {
   if (n === 3) {
     return "Won't you be my neighbor";
@@ -67,7 +67,7 @@ function beepBoop(n) {
   }
 }
 
-// create an array and populate it
+// create an array and populate it -- doesn't work
 function beepBoop(n) {
   const outputArray = [];
   for (let i = 0; i <= n; i++) {
@@ -84,22 +84,39 @@ function beepBoop(n) {
   return outputArray;
 };
 
-// try adding continue from yesterday -- doesn't help, still returns empty array
+// // try adding continue method from yesterday's research -- doesn't help, still returns empty array
+// function beepBoop(n) {
+//   const outputArray = [];
+//   for (let i = 0; i <= n; i++) {
+//     if ([i] === 3) {
+//       outputArray.push("Won't you be my neighbor");
+//       continue;
+//     } else if ([i] === 2) {
+//       outputArray.push("Boop!");
+//       continue;
+//     } else if ([i] === 1) {
+//       outputArray.push("Beep!");
+//     } else {
+//       return outputArray;
+//     }
+//   }
+// };
+
+// remove continue, add back in final else if from practice yesterday -- doesn't work.
 function beepBoop(n) {
   const outputArray = [];
   for (let i = 0; i <= n; i++) {
     if ([i] === 3) {
       outputArray.push("Won't you be my neighbor");
-      continue;
     } else if ([i] === 2) {
       outputArray.push("Boop!");
-      continue;
     } else if ([i] === 1) {
       outputArray.push("Beep!");
-    } else {
+    } else if ([i] === n) {
       return outputArray;
     }
   }
+  return outputArray;
 };
 
 // // create an array from version of function beepBoop() without the push methods; doesn't work
