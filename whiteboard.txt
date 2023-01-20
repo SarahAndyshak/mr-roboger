@@ -11,3 +11,10 @@ must return strings for variables above
 given number, must return array answer
 
 print array to html page
+will need to use .includes to find numbers to replace
+
+if 1 is inputted return "Beep!
+
+if 2 is inputted return "Boop!"
+
+if 3 is inputted return "Won't you be my neighbor?"

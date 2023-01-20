@@ -1,5 +1,6 @@
 // Business Logic
 
-function beepBoop(n) {
-  return 1;
+function beepBoop() {
+  let n = 1;
+  return "Beep!";
 }
