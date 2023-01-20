@@ -136,6 +136,18 @@ function beepBoop(n) {
     return n;
   }
 }
+Updated version:
+function beepBoop(n) {
+  if (n === 3) {
+    return "Won't you be my neighbor";
+  } else if (n === 2) {
+    return "Boop!";
+  } else if (n === 1) {
+    return "Beep!";
+  } else {
+    return n;
+  }
+}
 
 Test: "It should create an array and push values into the array.
 Code:
@@ -157,3 +169,4 @@ function beepBoop(n) {
     }
   }
 }
+Fails, returns an empty array.
