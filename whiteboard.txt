@@ -9,3 +9,5 @@ push to an array -- create final output array
 must recognize numbers
 must return strings for variables above
 given number, must return array answer
+
+print array to html page

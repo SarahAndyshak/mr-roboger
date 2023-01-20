@@ -48,3 +48,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Test-Driven Development
+Describe: beepBoop()
+
+Test: "It should return 0 for no entry."
+Code:
+Expected Output:
+
+Test: "It should return an array of number from 0 to the user's inputted number"
+Code:
+Expected Output:
+
+Test:
+Code:
+Output:
