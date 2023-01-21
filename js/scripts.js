@@ -172,19 +172,19 @@ function beepBoop(n) {
 //   return newArray;
 // }
 
-// trying another method adapted from lessons -- returned false for both n = 3 and n = 4 and doesn't display looped??? doesn't seem to help
-const array = [1, 2, 3, 4];
-let newArray = [];
+// // trying another method adapted from lessons -- returned false for both n = 3 and n = 4 and doesn't display looped??? doesn't seem to help
+// const array = [1, 2, 3, 4];
+// let newArray = [];
 
-function transform(array, n) {
-  for (let i = 0; i < array.length; i ++) {
-    if (array[i] === n) {
-      return true;
-    };
-    console.log("looped");
-  }
-  return false;
-}
+// function transform(array, n) {
+//   for (let i = 0; i < array.length; i ++) {
+//     if (array[i] === n) {
+//       return true;
+//     };
+//     console.log("looped");
+//   }
+//   return false;
+// }
 
 
 // User Logic
