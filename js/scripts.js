@@ -1,6 +1,6 @@
 // Business Logic
 
-// //works
+// // works
 // function beepBoop(n) {
 //   if(n = 1) {
 //     return "Beep!";
@@ -21,7 +21,7 @@
 //     return n;
 //   }
 // }
-// returns "Beep!" for n = 1, n for other values of n.
+// // returns "Beep!" for n = 1, n for other values of n.
 // function beepBoop(n) {
 //   if (n !== 1) {
 //     return n;
@@ -41,7 +41,7 @@
 //   }
 // }
 
-// returns "Won't you be my neighbor?" for n = 3 etc. Rearranged for descending order for later function
+// // returns "Won't you be my neighbor?" for n = 3 etc. Rearranged for descending order for later function
 // function beepBoop(n) {
 //   if (n === 3) {
 //     return "Won't you be my neighbor";
@@ -67,12 +67,13 @@ function beepBoop(n) {
   }
 }
 
-// create an array and populate it -- doesn't work
+// create an array and populate it -- doesn't work; tried declaring outputArray outside of function, didn't work either
 function beepBoop(n) {
   const outputArray = [];
   for (let i = 0; i <= n; i++) {
     if ([i] === 3) {
       outputArray.push("Won't you be my neighbor");
+      // console.log([i], "3") not showing up in console when tested
     } else if ([i] === 2) {
       outputArray.push("Boop!");
     } else if ([i] === 1) {
@@ -102,22 +103,22 @@ function beepBoop(n) {
 //   }
 // };
 
-// remove continue, add back in final else if from practice yesterday -- doesn't work.
-function beepBoop(n) {
-  const outputArray = [];
-  for (let i = 0; i <= n; i++) {
-    if ([i] === 3) {
-      outputArray.push("Won't you be my neighbor");
-    } else if ([i] === 2) {
-      outputArray.push("Boop!");
-    } else if ([i] === 1) {
-      outputArray.push("Beep!");
-    } else if ([i] === n) {
-      return outputArray;
-    }
-  }
-  return outputArray;
-};
+// // remove continue, add back in final else if from practice yesterday -- doesn't work.
+// function beepBoop(n) {
+//   const outputArray = [];
+//   for (let i = 0; i <= n; i++) {
+//     if ([i] === 3) {
+//       outputArray.push("Won't you be my neighbor");
+//     } else if ([i] === 2) {
+//       outputArray.push("Boop!");
+//     } else if ([i] === 1) {
+//       outputArray.push("Beep!");
+//     } else if ([i] === n) {
+//       return outputArray;
+//     }
+//   }
+//   return outputArray;
+// };
 
 // // create an array from version of function beepBoop() without the push methods; doesn't work
 // function newArray() {
@@ -157,6 +158,18 @@ function transform() {
   return newArray;
 }
 
+// tried moving array declarations into function; still returns empty array.
+function transform() {
+  const array = [1, 2, 3, 4];
+  let newArray = [];
+  newArray.forEach(function(element) {
+    if (element.toString().includes("1")) {
+      outputArray.push("Beep!");
+    }
+  })
+  return newArray;
+}
+
 
 
 
@@ -166,7 +179,7 @@ function handleFormSubmission(event) {
   const passage = document.getElementById("text-passage").value; // this part may need to change to grab results of beepBoop()
   const beepBoop = beepBoop(n);
   
-  document.querySelector("div#add-array").append(beepBoop); // I think this needs to be the array returned by beepBoop()
+  document.querySelector("div#add-array").append(beepBoop); // I think this needs to be the array returned by beepBoop(); not sure how to grab it right now
 }
 
 window.addEventListener("load", function() {
