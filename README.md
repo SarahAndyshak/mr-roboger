@@ -21,7 +21,7 @@ _When a user inputs a number, it returns a list of values from 0 to the inputted
 
 ## Known Bugs
 
-* 
+* Program does not currently work.
 
 ## License
 
