@@ -243,3 +243,9 @@ function beepBoop(n) {
     return finalArray;
 
   };
+
+  Test: "It will search for a "2" and return "Boop!"
+  Code:
+  const n = 20;
+  beepBoop(20);
+  Expected Outcome: ["Boop!", "Won't you be my neighbor!", 'Boop!'] for 12, 13, and 20.

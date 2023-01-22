@@ -281,8 +281,8 @@ function beepBoop(n) {
     let strings = outputArray[i].toString(); //create a variable to store string
     if (strings.includes("3")) {
       finalArray.push("Won't you be my neighbor!");
-    } else if (i === 2) {
-      outputArray.push("Boop!");
+    } else if (strings.includes("2")) {
+      finalArray.push("Boop!");
     } else if (i === 1) {
       outputArray.push("Beep!");
     } else { 
