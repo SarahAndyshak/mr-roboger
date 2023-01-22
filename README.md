@@ -205,4 +205,41 @@ function beepBoop(n) {
 
   };
 
-Test:
+Test: "It will search for a "3" and return "Won't you be my neighbor?"
+Code:
+const n = 13;
+beepBoop(13);
+Expected Outcome: ["Won't you be my neighbor?"] and nothing else because everything else is a string or a string without "3."
+function beepBoop(n) {
+  let outputArray = [];
+  let finalArray = [];
+  for (let i = 0; i <= n; i++) {
+    if (i === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if (i === 2) {
+      outputArray.push("Boop!");
+    } else if (i === 1) {
+      outputArray.push("Beep!");
+    } else { 
+      outputArray.push(i)
+    }
+  }
+  //return outputArray; // not needed bc 2nd array
+
+  for (let i = 0; i <= n; i++) {
+    let strings = outputArray[i].toString(); //create a variable to store string
+    if (strings.includes("3")) {
+      finalArray.push("Won't you be my neighbor!");
+    } else if (i === 2) {
+      outputArray.push("Boop!");
+    } else if (i === 1) {
+      outputArray.push("Beep!");
+    } else { 
+      outputArray.push(i)
+    }
+
+    //finalArray.push(outputArray[i].toString());
+    }
+    return finalArray;
+
+  };
