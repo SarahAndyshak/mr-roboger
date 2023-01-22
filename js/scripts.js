@@ -283,10 +283,10 @@ function beepBoop(n) {
       finalArray.push("Won't you be my neighbor!");
     } else if (strings.includes("2")) {
       finalArray.push("Boop!");
-    } else if (i === 1) {
-      outputArray.push("Beep!");
+    } else if (strings.includes("1")) {
+      finalArray.push("Beep!");
     } else { 
-      outputArray.push(i)
+      finalArray.push(outputArray[i])
     }
 
     //finalArray.push(outputArray[i].toString());

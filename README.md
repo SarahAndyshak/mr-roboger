@@ -249,3 +249,42 @@ function beepBoop(n) {
   const n = 20;
   beepBoop(20);
   Expected Outcome: ["Boop!", "Won't you be my neighbor!", 'Boop!'] for 12, 13, and 20.
+
+  Test: "It will search for a "1" and return "Beep!"
+  Code:
+  const n = 23;
+  beepBoop(23);
+  Expected outcome: [0, 'Beep!', 'Boop!', "Won't you be my neighbor", 4, 5, 6, 7, 8, 9, 'Beep!', 'Beep!', 'Boop!', "Won't you be my neighbor!", 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Beep!', 'Boop!', 'Boop!', 'Boop!', "Won't you be my neighbor!"]
+  function beepBoop(n) {
+  let outputArray = [];
+  let finalArray = [];
+  for (let i = 0; i <= n; i++) {
+    if (i === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if (i === 2) {
+      outputArray.push("Boop!");
+    } else if (i === 1) {
+      outputArray.push("Beep!");
+    } else { 
+      outputArray.push(i)
+    }
+  }
+  //return outputArray; // not needed bc 2nd array
+
+  for (let i = 0; i <= n; i++) {
+    let strings = outputArray[i].toString(); //create a variable to store string
+    if (strings.includes("3")) {
+      finalArray.push("Won't you be my neighbor!");
+    } else if (strings.includes("2")) {
+      finalArray.push("Boop!");
+    } else if (strings.includes("1")) {
+      finalArray.push("Beep!");
+    } else { 
+      finalArray.push(outputArray[i])
+    }
+
+    //finalArray.push(outputArray[i].toString());
+    }
+    return finalArray;
+
+  };
