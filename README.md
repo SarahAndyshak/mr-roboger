@@ -149,7 +149,7 @@ function beepBoop(n) {
   }
 }
 
-Test: "It should create an array and push values into the array.
+Test: "It should create an array and push values into the array."
 Code:
 const n = 1
 beepBoop(1)
@@ -170,3 +170,9 @@ function beepBoop(n) {
   }
   return outputArray;
 };
+
+Test: "It should create an array and push values into the array."
+Code:
+const n = 5
+beepBoop(5)
+Expected Outcome: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]

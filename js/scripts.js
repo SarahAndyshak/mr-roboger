@@ -71,23 +71,39 @@ function beepBoop(n) {
   }
 }
 
-// create an array and populate it -- doesn't work; tried declaring outputArray outside of function, didn't work either
+// // create an array and populate it -- doesn't work; tried declaring outputArray outside of function, didn't work either
+// function beepBoop(n) {
+//   const outputArray = [];
+//   for (let i = 0; i <= n; i++) {
+//     if ([i] === 3) {
+//       outputArray.push("Won't you be my neighbor");
+//       // console.log([i], "3") not showing up in console when uncommented and tested
+//     } else if ([i] === 2) {
+//       outputArray.push("Boop!");
+//     } else if ([i] === 1) {
+//       outputArray.push("Beep!");
+//     } else {
+//       return outputArray;
+//     }
+//   }
+//   return outputArray;
+// };
+
+// needed to push i into the array, wasn't happening with previous command - works!
 function beepBoop(n) {
-  const outputArray = [];
+  let outputArray = [];
   for (let i = 0; i <= n; i++) {
-    if ([i] === 3) {
+    if (i === 3) {
       outputArray.push("Won't you be my neighbor");
-      // console.log([i], "3") not showing up in console when uncommented and tested
-    } else if ([i] === 2) {
+    } else if (i === 2) {
       outputArray.push("Boop!");
-    } else if ([i] === 1) {
+    } else if (i === 1) {
       outputArray.push("Beep!");
-    } else {
-      return outputArray;
+    } else { outputArray.push(i)
     }
   }
   return outputArray;
-};
+  };
 
 // // try adding continue method from yesterday's research -- doesn't help, still returns empty array
 // function beepBoop(n) {
