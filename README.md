@@ -154,19 +154,19 @@ Code:
 const n = 1
 beepBoop(1)
 Expected Outcome: [0, "Beep!"] 
-Actual result: returned an empty array.
+Actual result: returns array beginning with "Beep!" rather than 0; doesn't return any numbers after "Won't you be my neighbor?"
 function beepBoop(n) {
-  const outputArray = [];
+  let outputArray = [];
   for (let i = 0; i <= n; i++) {
-    if ([i] === 3) {
+    if (i === 3) {
       outputArray.push("Won't you be my neighbor");
-    } else if ([i] === 2) {
+    } else if (i === 2) {
       outputArray.push("Boop!");
-    } else if ([i] === 1) {
+    } else if (i === 1) {
       outputArray.push("Beep!");
-    } else if ([i] !== 1 && [i] !== 2 && [i] !== 3) {
+    } else if (i === n) {
       return outputArray;
     }
   }
-}
-Fails, returns an empty array.
+  return outputArray;
+};

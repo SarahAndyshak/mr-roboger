@@ -122,6 +122,44 @@ function beepBoop(n) {
 //   return outputArray;
 // };
 
+// Try changing array from const to let, remove brackets from i; works but doesn't print 0 before first number.
+function beepBoop(n) {
+  let outputArray = [];
+  for (let i = 0; i <= n; i++) {
+    if (i === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if (i === 2) {
+      outputArray.push("Boop!");
+    } else if (i === 1) {
+      outputArray.push("Beep!");
+    } else if (i === n) {
+      return outputArray;
+    }
+  }
+  return outputArray;
+};
+
+// // Try adding continue back in, doesn't work.
+// function beepBoop(n) {
+//   let outputArray = [];
+//   for (let i = 0; i <= n; i++) {
+//     if (i === 3) {
+//       outputArray.push("Won't you be my neighbor");
+//       continue;
+//     } else if (i === 2) {
+//       outputArray.push("Boop!");
+//       continue;
+//     } else if (i === 1) {
+//       outputArray.push("Beep!");
+//       continue;
+//     } else if (i === n) {
+//       return outputArray;
+//       continue;
+//     }
+//   }
+//   return outputArray;
+// };
+
 // // create an array from version of function beepBoop() without the push methods; doesn't work
 // function newArray() {
 //   const newArray = [];
@@ -140,6 +178,23 @@ function beepBoop(n) {
     return n;
   }
 }
+
+// add continue back in
+function beepBoop(n) {
+  let outputArray = [];
+  for (let i = 0; i <= n; i++) {
+    if (i === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if (i === 2) {
+      outputArray.push("Boop!");
+    } else if (i === 1) {
+      outputArray.push("Beep!");
+    } else if (i === n) {
+      return outputArray;
+    }
+  }
+  return outputArray;
+};
 
 //sample loop from lesson; trying to figure out how to combine this with above function
 // const array = [1, 2, 3, 4];
