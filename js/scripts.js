@@ -260,6 +260,33 @@ function beepBoop(n) {
 //   return false;
 // }
 
+// Add another array and loop to add words
+function beepBoop(n) {
+  let outputArray = [];
+  let finalArray = [];
+  for (let i = 0; i <= n; i++) {
+    if (i === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if (i === 2) {
+      outputArray.push("Boop!");
+    } else if (i === 1) {
+      outputArray.push("Beep!");
+    } else { 
+      outputArray.push(i)
+    }
+  }
+  //return outputArray; // not needed bc 2nd array
+
+  for (let i = 0; i <= n; i++) {
+
+
+    
+    finalArray.push(outputArray[i].toString());
+    }
+    return finalArray;
+
+  };
+
 
 // User Logic
 function handleFormSubmission(event) {

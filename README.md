@@ -176,3 +176,33 @@ Code:
 const n = 5
 beepBoop(5)
 Expected Outcome: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5]
+
+Test: "It should turn outputArray into a string."
+Code: 
+const n = 10;
+beepBoop(10);
+Expected Outcome: ["0", "Beep!", "Boop!", "Won't you be my neighbor?", "4", "5", "6", "7", "8", "9", "10"]
+function beepBoop(n) {
+  let outputArray = [];
+  let finalArray = [];
+  for (let i = 0; i <= n; i++) {
+    if (i === 3) {
+      outputArray.push("Won't you be my neighbor");
+    } else if (i === 2) {
+      outputArray.push("Boop!");
+    } else if (i === 1) {
+      outputArray.push("Beep!");
+    } else { 
+      outputArray.push(i)
+    }
+  }
+  //return outputArray; // not needed bc 2nd array
+
+  for (let i = 0; i <= n; i++) {
+    finalArray.push(outputArray[i].toString());
+    }
+    return finalArray;
+
+  };
+
+Test:
