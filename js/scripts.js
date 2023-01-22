@@ -1,5 +1,7 @@
 // Business Logic
 
+
+// still in process. functions that work are not commented out for comparison.
 // works
 function beepBoop(n) {
   if(n = 1) {
@@ -166,19 +168,6 @@ function beepBoop(n) {
 //   newArray.push(beepBoop(n));
 // }
 
-// Try to figure out how to change 10, 12, 13 etc into correct strings riffing on this function
-function beepBoop(n) {
-  if (n === 3) {
-    return "Won't you be my neighbor";
-  } else if (n === 2) {
-    return "Boop!";
-  } else if (n === 1) {
-    return "Beep!";
-  } else {
-    return n;
-  }
-}
-
 // add continue back in
 function beepBoop(n) {
   let outputArray = [];
@@ -195,6 +184,20 @@ function beepBoop(n) {
   }
   return outputArray;
 };
+
+
+// Try to figure out how to change 10, 12, 13 etc into correct strings riffing on this function
+function beepBoop(n) {
+  if (n === 3) {
+    return "Won't you be my neighbor";
+  } else if (n === 2) {
+    return "Boop!";
+  } else if (n === 1) {
+    return "Beep!";
+  } else {
+    return n;
+  }
+}
 
 //sample loop from lesson; trying to figure out how to combine this with above function
 // const array = [1, 2, 3, 4];
