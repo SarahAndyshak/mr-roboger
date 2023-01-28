@@ -1,21 +1,22 @@
 // Business Logic
 
 function beepBoop(n) {
-  let outputArray = []; //not actually needed if first loop is omitted
+  // let outputArray = []; //this is not needed, but is left commented out for future reference.
   let finalArray = [];
+  // for (let i = 0; i <= n; i++) {
+  //   if (i === 3) {
+  //     outputArray.push("Won't you be my neighbor");
+  //   } else if (i === 2) {
+  //     outputArray.push("Boop!");
+  //   } else if (i === 1) {
+  //     outputArray.push("Beep!");
+  //   } else { 
+  //     outputArray.push(i)
+  //   }
+  // } 
   for (let i = 0; i <= n; i++) {
-    if (i === 3) {
-      outputArray.push("Won't you be my neighbor");
-    } else if (i === 2) {
-      outputArray.push("Boop!");
-    } else if (i === 1) {
-      outputArray.push("Beep!");
-    } else { 
-      outputArray.push(i)
-    }
-  } //note lines 18 and 26 don't need brackets around i, change this to make lines 6-16 unnecessary
-  for (let i = 0; i <= n; i++) {
-    let strings = outputArray[i].toString(); //create a variable to store string
+    // let strings = outputArray [i].toString(); //create a variable to store string
+    let strings = i.toString();
       if (strings.includes("3")) {
         finalArray.push("Won't you be my neighbor!");
       } else if (strings.includes("2")) {
@@ -23,7 +24,7 @@ function beepBoop(n) {
       } else if (strings.includes("1")) {
         finalArray.push("Beep!");
       } else { 
-        finalArray.push(outputArray[i])
+        finalArray.push(i)
       }
     }
     return finalArray;
